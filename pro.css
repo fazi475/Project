@@ -1,0 +1,242 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.664) !important;
+}
+.navbar-brand {
+    color: white !important;
+    font-size: 25pt;
+    font-weight: bold;
+}
+.nav-link {
+    color: white !important;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.navbar-nav{
+    margin-left: 72%;
+}
+.carousel-item{
+    height: 564.8px;
+}
+.block{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.c-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.carousel-caption{
+    margin-bottom: 9rem;
+}
+/* --------Our Services Start------------ */
+.services{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    max-width: 90%;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px ;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* --------Our Services End------------ */
+
+/* --------About Start------------ */
+.about{
+    background-color: #f9f9f9;
+    max-width: 90%;
+    margin-left: 5%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 25px 0 25px 0;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+    text-align: justify;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa500;
+    color: white;
+    font-weight: 550;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+/* --------About End------------ */
+
+/* --------Gallery Start------------ */
+.gallery{
+    background-color: #f9f9f9;
+    max-width: 90%;
+    margin-left: 5%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.gallery .card{
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallery .card img{
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+/* --------Gallery End------------ */
+
+@keyframes apear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100px); */
+    }
+    to{
+        opacity: 1;
+        scale: 1; 
+        /* transform: translateX(0px); */
+    }
+}
+.divv{
+    animation: apear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+} 
+/* ---------FORM--------- */
+#p1{
+    color: #fa4242;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#p2{
+    color: #fa4242;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#p3{
+    color: #fa4242;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#p4{
+    color: #fa4242;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#p5{
+    color: #fa4242;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.contain{
+    height: 100vh;
+    width: 100%; 
+    background-image:url(Images/Image\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 350px;
+    height: 492.4px;
+    box-shadow: 0 0 35px;
+}
+.form h1{
+    font-size: 32px; color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.form label{
+    font-size: 20px; color: white;
+    margin-left: 50px;
+}
+.form input{
+    font-size: 16px;
+    width: 70%;
+    margin-left: 50px;
+}
+.form .button{
+    font-size: 15pt;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    border-radius: 10pt;
+    width: 22%;
+    margin: 0 0 10px 38%;
+}
+.button:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+    border-radius: 10pt;
+} 
+@media (max-width: 1037px){
+    .navbar-nav{
+        margin-left: 63%;
+    }
+}
+@media (max-width: 991px){
+    .navbar-nav{
+        margin-left: 0;
+    }
+}
+@media (max-width: 530px){
+    .text-light{
+        font-size: 10pt;
+    }
+    h4{
+        font-size: 15pt;
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        /* scale: 0.5; */
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        /* scale: 1;  */
+        transform: translateX(0px);
+    }
+}
+footer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 17%;
+} 
